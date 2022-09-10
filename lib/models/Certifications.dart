@@ -6,27 +6,27 @@ class Certifications {
 
 final List<Certifications> demo_Certificationss = [
   Certifications(
-    name: "SQL",
-    source: "OpenBootcamp",
+    name: "Tec. Superior en Desarrolo de Software",
+    source: "Marzo 2019 - Noviembre 2021",
     text:
-        "I have had the pleasure of working with Anwar on two flutter projects and what strikes me the most about his work is his ability to write clean and reusable codes with best practices. He is hardworking and makes it so easy to transcribe ideas into beautiful and testable flutter apps. He is a Flutter/Dart gem and has my highest Certifications",
+        "Estoy capacitado para producir artefactos de software, lo que comprende su diseño detallado, construcción reutilizando elementos existentes o programándolos enteramente, y verificación unitaria, así como su depuración, optimización y mantenimiento.",
   ),
   Certifications(
-    name: "Flutter Expert",
+    name: "Front-End: Flutter ",
     source: "Udemy",
     text:
-        "Abu is great asset for any organization. It's a true pleasure working with him at TakeIn. His flutter skill is amazing as well as his professionalism and being a good team player. Abu's problem solving skill is also one of his great skills.",
+        "Creación aplicaciones de seguimiento en tiempo real, chats, cobros, autenticaciones, backend, dominar BLoC y otros gestores de estado, encriptaciones de contraseña, manejo de sesiones de usuario, Apple y Google sign-in y muchas cosas más",
   ),
   Certifications(
-    name: "Java",
+    name: "Base Datos: SQL / SQLyog / PostgreSQL ",
+    source: "OpenBootcamp / Autodidacta ",
+    text:
+        "Diseñar las estructuras de base de datos; realizar creaciones conforme con las especificaciones funcionales; efectúe pruebas de unidades, revisiones de códigos y refactorizaciones; garantice versiones de código correctas durante todas las etapas del desarrollo y mucho más.",
+  ),
+  Certifications(
+    name: "Back-End: NodeJS | Java ",
     source: "OpenBootcamp",
     text:
-        "I like your way you doing your project and you taught us. After I watch this I like and hit the subscribe button and then watch your video playlist one by one!! Within three hours, I learned a lot! I share your channel in my college WhatsApp group!",
-  ),
-  Certifications(
-    name: "Roshan Shetty",
-    source: "YouTube",
-    text:
-        "Very straightforward, professional and also the best flutter videos in the youtube! It will be great if you add some comments to your steps with 0.5 seconds pause before implementing this step. By meaning of steps, I mean not the basic, but structural steps, like 10-20 steps per video. However, thank you very much!",
+        "Las funciones principales: Aplicar acciones de lógica, Utilizar las librerías del servidor, Realizar la conexión con bases de datos, Garantizar la seguridad de la aplicación web, Eliminar posibles errores que puedan interferir en la navegación del usuario, Mejorar las funcionalidades del front-end",
   ),
 ];

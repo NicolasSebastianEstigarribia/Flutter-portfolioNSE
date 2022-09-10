@@ -3,7 +3,7 @@ import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
 
 import '../../../constants.dart';
-import 'project_card.dart';
+import 'widgets/project_card.dart';
 
 class MyProjects extends StatelessWidget {
   const MyProjects({

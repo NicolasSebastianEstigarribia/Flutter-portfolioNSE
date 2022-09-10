@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Certifications.dart';
 
-import '../../../constants.dart';
+import '../../../../constants.dart';
 
 class CertificationsCard extends StatelessWidget {
   const CertificationsCard({
@@ -31,7 +31,14 @@ class CertificationsCard extends StatelessWidget {
             maxLines: 4,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(height: 1.5),
-          )
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              "Mas información >>",
+              style: TextStyle(color: primaryColor),
+            ),
+          ),
         ],
       ),
     );

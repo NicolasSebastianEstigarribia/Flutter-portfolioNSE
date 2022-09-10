@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
 
-import '../../../constants.dart';
+import '../../../../constants.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -37,7 +37,7 @@ class ProjectCard extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              "Read More >>",
+              "Mas información >>",
               style: TextStyle(color: primaryColor),
             ),
           ),
