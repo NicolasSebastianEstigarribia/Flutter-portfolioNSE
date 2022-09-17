@@ -4,7 +4,7 @@ class Certifications {
   Certifications({this.name, this.source, this.text});
 }
 
-final List<Certifications> demo_Certificationss = [
+final List<Certifications> listCertifications = [
   Certifications(
     name: "Tec. Superior en Desarrolo de Software",
     source: "Marzo 2019 - Noviembre 2021",

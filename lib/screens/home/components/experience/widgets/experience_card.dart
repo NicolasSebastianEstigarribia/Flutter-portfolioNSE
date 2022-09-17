@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Experience.dart';
+import 'package:flutter_profile/screens/home/components/experience/experience_controller.dart';
 
-import '../../../../constants.dart';
+import '../../../../../constants.dart';
 
 class ExperienceCard extends StatelessWidget {
   const ExperienceCard({
@@ -22,6 +23,10 @@ class ExperienceCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
+              experience.position!,
+              style: Theme.of(context).textTheme.headline5,
+            ),
+            Text(
               experience.business!,
               style: Theme.of(context).textTheme.subtitle2,
             ),
@@ -29,10 +34,18 @@ class ExperienceCard extends StatelessWidget {
             const SizedBox(height: defaultPadding),
             Text(
               experience.text!,
-              maxLines: 4,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(height: 1.5),
-            )
+            ),
+            TextButton(
+              onPressed: () {
+                ExperienceController().mostrarImagenes(context, experience.imgList!);
+              },
+              child: Text(
+                "Ver Imagenes >>",
+                style: TextStyle(color: primaryColor),
+              ),
+            ),
           ],
         ),
       ),

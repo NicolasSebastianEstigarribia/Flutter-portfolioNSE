@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/Certifications.dart';
-import 'package:flutter_profile/screens/home/components/widgets/certifications_card.dart';
+import 'package:flutter_profile/models/Experience.dart';
 
+import 'package:flutter_profile/screens/home/components/experience/widgets/experience_card.dart';
 
+import '../../../../constants.dart';
 
-import '../../../constants.dart';
-
-class Recommendations extends StatelessWidget {
-  const Recommendations({
+class Experience extends StatelessWidget {
+  const Experience({
     Key? key,
   }) : super(key: key);
 
@@ -19,19 +18,19 @@ class Recommendations extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Certificaciones y cursos.",
+            "Experiencia laboral",
             style: Theme.of(context).textTheme.headline6,
           ),
           const SizedBox(height: defaultPadding),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
+            child: Column(
               children: List.generate(
-                demo_Certificationss.length,
+                listExperience.length,
                 (index) => Padding(
                   padding: const EdgeInsets.only(right: defaultPadding),
-                  child: CertificationsCard(
-                    certifications: demo_Certificationss[index],
+                  child: ExperienceCard(
+                    experience: listExperience[index],
                   ),
                 ),
               ),
@@ -42,4 +41,3 @@ class Recommendations extends StatelessWidget {
     );
   }
 }
-
