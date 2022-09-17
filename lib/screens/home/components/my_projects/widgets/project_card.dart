@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/components/show_carrousel.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
 
@@ -22,8 +23,10 @@ class ProjectCard extends StatelessWidget {
         children: [
           Text(
             project.title!,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
+            style: Theme.of(context).textTheme.headline5,
+          ),
+          Text(
+            project.business!,
             style: Theme.of(context).textTheme.subtitle2,
           ),
           Spacer(),
@@ -35,7 +38,9 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              showCarrousel(context, project.imgList!);
+            },
             child: Text(
               "Mas información >>",
               style: TextStyle(color: primaryColor),

@@ -35,7 +35,7 @@ class CertificationsCard extends StatelessWidget {
           TextButton(
             onPressed: () {},
             child: Text(
-              "Mas información >>",
+              "Certificaciones >>",
               style: TextStyle(color: primaryColor),
             ),
           ),

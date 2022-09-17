@@ -82,7 +82,7 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          Text(".."),
+          Text("Desarrollador "),
           Responsive.isMobile(context)
               ? Expanded(child: AnimatedText())
               : AnimatedText(),
@@ -105,15 +105,19 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "Tec. Superior en Desarrollo de Software",
+          "Mobile",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "FullStack Developer.",
+          "Flutter",
           speed: Duration(milliseconds: 60),
         ),
         TyperAnimatedText(
-          "Diseño web adaptable y app mobile.",
+          "Backend",
+          speed: Duration(milliseconds: 60),
+        ),
+        TyperAnimatedText(
+          "Full Stack",
           speed: Duration(milliseconds: 60),
         ),
       ],

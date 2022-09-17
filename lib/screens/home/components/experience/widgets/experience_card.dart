@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Experience.dart';
-import 'package:flutter_profile/screens/home/components/experience/experience_controller.dart';
 
 import '../../../../../constants.dart';
 
@@ -36,15 +35,6 @@ class ExperienceCard extends StatelessWidget {
               experience.text!,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(height: 1.5),
-            ),
-            TextButton(
-              onPressed: () {
-                ExperienceController().mostrarImagenes(context, experience.imgList!);
-              },
-              child: Text(
-                "Ver Imagenes >>",
-                style: TextStyle(color: primaryColor),
-              ),
             ),
           ],
         ),
